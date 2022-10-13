@@ -36,7 +36,14 @@ class Tree {
     // create an object of Tree
     Tree tree = new Tree();
 
-    ??insertcode
+    // create nodes of tree
+    tree.root = new Node(1);
+    tree.root.left = new Node(12);
+    tree.root.right = new Node(9);
+
+    // create child nodes of left child
+    tree.root.left.left = new Node(5);
+    tree.root.left.right = new Node(6);
 
     System.out.println("In Order traversal");
     tree.inOrder(tree.root);
